@@ -1,0 +1,38 @@
+
+<p>Your Name (required)<br />
+    [text* text-671] </p>
+
+<p>Your Email (required)<br />
+    [email* email-429] </p>
+
+<p>Phone<br />
+    [tel tel-287] </p>
+
+<p>Your Message<br />
+    [textarea textarea-586] </p>
+
+<p>[submit "Send"]</p>
+
+
+
+
+From: [text-671] <[email-429]>
+
+<table width="500" border="0" cellspacing="1" cellpadding="1">
+  <tr>
+    <td><strong>Name:</strong></td>
+    <td>[text-671]</td>
+  </tr>
+  <tr>
+    <td><strong>Email:</strong></td>
+    <td>[email-429]</td>
+  </tr>
+  <tr>
+    <td><strong>Phone:</strong></td>
+    <td>[tel tel-287]</td>
+  </tr>
+  <tr>
+    <td><strong>Message:</strong></td>
+    <td>[textarea-586]</td>
+  </tr>
+</table>

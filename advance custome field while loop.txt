@@ -1,0 +1,12 @@
+<?php
+			$post = get_post(344);
+			$my_post_id = '344';
+			$content = $post->post_content;
+			if(get_field('our_partners_detail',$my_post_id)): 
+			while(the_repeater_field('our_partners_detail',$my_post_id)): 
+			$ptitle = get_sub_field('ptitle',$my_post_id);
+			$attachment_id = get_sub_field('pimage',$my_post_id);
+			$sponsorimg = wp_get_attachment_image_src( $attachment_id, 'thumbnail'); ?>
+			<li><img src="<?php echo $sponsorimg[0]; ?>" alt="<?php echo $ptitle; ?>" title="<?php echo $ptitle; ?>"/></li>
+			<?php  endwhile; 
+					endif;  ?>

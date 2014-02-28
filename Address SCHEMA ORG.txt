@@ -1,0 +1,14 @@
+<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+<span itemprop="streetAddress">634 South Road, Glandore</span>
+<span itemprop="addressLocality">SA 5037</span>
+<span itemprop="addressRegion">Australia</span>
+</div>
+
+<strong>Phone:</strong><span itemprop="telephone">(08) 8182 6420</span></br>
+<strong>Fax :</strong>
+<span itemprop="faxNumber">(08) 8182 3571</span><br>
+<span itemprop="email"><strong>Email:</strong>
+<a href="mailto:admin@lotuskitchens.com.au"> admin@lotuskitchens.com.au</a></span><br>
+<strong>Lic. No: </strong>BLD 244632  <br>
+<strong >ABN:</strong> 75 155 666 345<br>
+

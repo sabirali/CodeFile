@@ -1,0 +1,18 @@
+'supports' => array( 'title', 'editor',  'thumbnail', 'page-attributes', 'excerpt', 'thumbnail', 'custom-fields', 'revisions' )
+
+
+
+Add Custome fileds
+
+function cust_field_text($column_name){
+        if($column_name === 'cust_col'){
+                 the_meta();
+          }
+}
+add_action('manage_posts_custom_column', 'cust_field_text', 10, 2);
+function cust_fields($defaults){
+    $defaults['cust_col'] = __('cust fields');
+    return $defaults;
+}
+
+add_filter('manage_posts_columns', 'cust_fields');

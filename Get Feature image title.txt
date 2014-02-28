@@ -1,0 +1,22 @@
+<?php $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
+	echo '<a data-rel="prettyPhoto" href="' . $large_image_url[0] . '" title="' . the_title_attribute('echo=0') . '" >';
+						   the_post_thumbnail('full'); ?>
+
+
+-----------------------------------------------------------------
+Final
+<?php $title = get_post(get_post_thumbnail_id($my_id11))->post_title;?>
+
+title="<?php echo $title ?>"
+
+
+
+
+
+----------------------------------------------------
+$image_id = get_post_thumbnail_id(10);
+$image_url = wp_get_attachment_image_src($image_id,array(320,202), true); ?>
+<img src="<?php echo  $image_url[0];  ?>" alt="<?php echo $key_1_value = get_post_meta( 10, 'Alt', true );?>" title="<?php echo $key_1_value = get_post_meta( 10, 'Title', true );?>" />
+
+
+

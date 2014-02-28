@@ -1,0 +1,19 @@
+<?php $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 1,'cat' => 24, ) ); ?>
+		<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		<h3><?php the_title(); ?></h3>
+		<?php			
+				$image_id = get_post_thumbnail_id($post->ID);
+				$image_url = wp_get_attachment_image_src($image_id,'full', true); ?>
+						
+			<div class="hthumb">
+			
+			<img src="<?php echo  $image_url[0];  ?>" alt="<?php echo $key_1_value = get_post_meta($image_id, 'Alt', true );?>" title="<?php echo $key_1_value = get_post_meta($image_id, 'Title', true );?>" />
+			
+			<?php $my_idcat=$post->ID;
+			$my_postcat = get_post( $my_idcat ); 
+			$my_title=$my_postcat->post_title;
+			$my_excerptcat = $my_postcat->post_excerpt; ?>
+			<div class="main-cnt">
+			<p><?php echo ($my_excerptcat); ?></p>
+			</div>
+		 	</div>								

@@ -1,0 +1,1 @@
+<?php wp_nav_menu( array( 'container' => false,'menu' => 'Footer Menu', 'items_wrap' => '<ul class="footer_ul">%3$s</ul>' ) ); ?>

@@ -1,0 +1,26 @@
+<?php 
+$id=21; 
+$post = get_page($id); 
+$content = apply_filters('the_content', $post->post_content); 
+$title=$post->post_title;
+echo $content;  
+$my_excerpt9 = $post->post_excerpt;
+?>
+
+===========================
+<?php
+ 
+$page_id = 6; // Enter your post, page or custom post type id here
+ 
+$page_data = get_page( $page_id );  //gets all page data
+ 
+$excerpt = apply_filters('the_excerpt', $page_data->post_content);   //filters just the excerpt
+ 
+$title = $page_data->post_title;  // Get title
+ 
+$permalink = get_permalink($page_id); //get the permalink
+ 
+echo '<h2>' . $title . '</h2>';  //output title in heading
+echo $excerpt . '<br/>';  // Output excerpt
+echo '<a href="' . $permalink . '">Read more</a>'; //Permalink to full post/page
+?>

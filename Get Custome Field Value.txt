@@ -1,0 +1,5 @@
+$nos = get_post_meta($post->ID, 'Number of Slider', true);
+
+<div id="<?php echo $i; ?>" class="slide-section section" style="background-image: url('<?php  $my_field = get_post_meta($post->ID, 'Slider'.$i, true);
+
+echo $my_field;  ?>');"> 

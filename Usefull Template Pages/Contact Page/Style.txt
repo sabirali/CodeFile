@@ -1,0 +1,2 @@
+.contact-page{width:93%;padding: 36px;}
+.cntform{float:left;padding-right:65px;width:40%;}

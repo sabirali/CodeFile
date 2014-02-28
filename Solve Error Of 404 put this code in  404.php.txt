@@ -1,0 +1,13 @@
+Put in top of the page befor the  <?php
+---Static-- 
+
+<script type="text/javascript">
+    window.location = "http://idealpools.clients.zibmedia.com.au"
+</script>
+
+---- Dynamic ------
+<?php
+header("HTTP/1.1 301 Moved Permanently");
+header("Location: ".get_bloginfo('url'));
+exit();
+?>

@@ -1,0 +1,6 @@
+RewriteCond %{THE_REQUEST} ^.*/index\.php 
+RewriteRule ^(.*)index.php$ /$1 [R=301,L] 
+
+
+
+Note:Put this code in webapps/wordpress-->Htaccess file    

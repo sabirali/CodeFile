@@ -1,0 +1,3 @@
+<?php $sc_homecontent1  = of_get_option('sc_homecontent1'); 
+$sc_homecontent1 = (strlen($sc_homecontent1) > 250)?substr($sc_homecontent1,0,250).'...':$sc_homecontent1;
+?>

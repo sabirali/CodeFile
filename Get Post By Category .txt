@@ -1,0 +1,30 @@
+<div class="col-sm-3 col-6 portbox">
+		<?php $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 1,'cat' => 24, ) ); ?>
+		<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		<h3><a href="<?php echo the_permalink();?>"><?php the_title(); ?></a></h3>
+		<?php			
+				$image_id = get_post_thumbnail_id($post->ID);
+				$image_url = wp_get_attachment_image_src($image_id,'Thumbnail', true); ?>
+						
+			<div class="hthumb">
+			
+			<img src="<?php echo  $image_url[0];  ?>" alt="<?php echo $key_1_value = get_post_meta($post->ID, 'Alt', true );?>" title="<?php echo $key_1_value = get_post_meta($post->ID, 'Title', true );?>" />
+			
+			<?php $my_idcat=$post->ID;
+			$my_postcat = get_post( $my_idcat ); 
+			$my_title=$my_postcat->post_title;
+			$content=$my_postcat->post_content;
+			$my_excerptcat = $my_postcat->post_excerpt; ?>
+			<div class="main-cnt">
+			<?php /*?><p><?php echo ($my_excerptcat); ?></p><?php */?>
+<p><?php $sc_homecontent1 = (strlen($content) > 250)?substr($content,0,250).'...':$$content; 
+				echo $sc_homecontent1; ?></p>
+			
+			</div>
+		 	</div>								
+			
+						
+		<?php endwhile; ?>
+			<?//php dynamic_sidebar('Footer'); ?>		
+		<h3><a href="<?php echo the_permalink();?>"> Read More..</a></h3>
+</div>

@@ -1,0 +1,20 @@
+<form class="formclass" method="get" action="" >
+						<select name="p" id="p"  data-placeholder="Choose a Subub..." class="chosen-select" style="width:350px;">
+						<?php 
+							$argstestimonial = array('post_type' => 'post','orderby' => 'menu_order','order' => 'ASC','posts_per_page' => 50,'tax_query' => array(array('taxonomy' => 'category','field' => 'term_id','terms' => array( 6 ),'operator' => 'IN')));
+							$query = new WP_Query($argstestimonial);
+							if($query->have_posts()):
+							while ( $query->have_posts() ) : $query->the_post();
+		
+							$title=$post->post_title;
+							$name=$post->post_name;
+							$aid=$post->ID;
+						?>	
+						<option value="<?php echo $aid; ?>"><?php echo $title; ?></option> 	
+							<?php 
+							endwhile; 
+							endif; 
+							?> 
+						</select>
+						<input class="input_button" type="submit" value="GO">
+					</form>

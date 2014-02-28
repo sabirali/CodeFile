@@ -1,0 +1,6 @@
+remove_action('wp_head', 'rel_canonical');
+
+function at_remove_dup_canonical_link() {
+ return false;
+}
+add_filter( 'wpseo_canonical', 'at_remove_dup_canonical_link' );

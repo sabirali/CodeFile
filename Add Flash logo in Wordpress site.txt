@@ -1,0 +1,4 @@
+<div class="site-logo">
+<embed src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_animation.swf"  flashvars="color1=6710886&type=user&id=17643643"  quality="high" width="331" height="167" name="twitter_badge" align="middle" allowscriptaccess="always" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /></embed>
+    </embed>
+   </div>

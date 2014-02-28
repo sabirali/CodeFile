@@ -1,0 +1,45 @@
+<div class="contact_leftside">
+
+		<table>
+
+		<tbody>
+
+			<tr>
+
+				<td width="150" style="vertical-align:top;"><strong style="color:#254488;">Office Address:</strong></td>
+
+				<td>PO Box 805</br>
+				North Adelaide, SA-5006</br>
+				<b>Warehouse:</b></br>
+				95 Harrison Rd</br>
+				Dudley Park, SA-5008</br>
+	
+
+			</tr>
+
+			
+			<tr>
+
+				<td><strong style="color:#254488;">Email:</strong></td>
+
+				<td><a href="mailto:pinku.ranpura@urpages.com.au">pinku.ranpura@urpages.com.au</a></td>
+
+			</tr>
+
+			<tr>
+
+				<td><strong style="color:#254488;">Mobile Phone:</strong></td>
+
+				<td>0417 827 309 </td>
+
+			</tr>
+
+			
+
+		</tbody>
+
+		</table>
+
+		<?php the_content(); ?>
+
+	</div>
